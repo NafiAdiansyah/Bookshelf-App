@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bookshelf App</title>
+</head>
+
+<body>
+  <header class="head-bar">
+    <h1 class="head-title">Bookshelf App</h1>
+
+  </header>
+  <main>
+    <div class="container">
+      <div class="field">
+        <div class="gambar">
+          <img src="assets/image1.png" alt="">
+        </div>
+        <div class="inputSection">
+          <h2>Masukkan Buku Baru</h2>
+          <form id="inputBook">
+            <div class="input">
+              <label for="inputBookTitle">Judul</label>
+              <input id="inputBookTitle" type="text" required>
+            </div>
+            <div class="input">
+              <label for="inputBookAuthor">Penulis</label>
+              <input id="inputBookAuthor" type="text" required>
+            </div>
+            <div class="input">
+              <label for="inputBookYear">Tahun</label>
+              <input id="inputBookYear" type="number" required>
+            </div>
+            <div class="input-inline">
+              <label for="inputBookIsComplete">Selesai Dibaca</label>
+              <input id="inputBookIsComplete" type="checkbox">
+            </div>
+            <button id="bookSubmit" type="submit">Tambahkan Buku ke dalam daftar <span>Belum selesai
+                dibaca</span></button>
+          </form>
+        </div>
+      </div>
+      <div class="field second">
+        <div class="searchField">
+          <div class="search" id="search">
+            <div class="search-box shadow">
+              <input id="searchTitle" class="searchTitle" type="text" name="" placeholder="Cari judul buku disini">
+              <button id="searchSubmit" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <div class="BookCard"></div>
+          </div>
+        </div>
+
+        <div class="bookShelf">
+          <div class="bookStats">
+            <div class="BookshelfCard incompleteBookList">
+              <h2>Belum selesai dibaca</h2>
+              <div class="BookCard" id="uncompleteBook"></div>
+            </div>
+            <div class="BookshelfCard completeBookList">
+              <h2>Selesai dibaca</h2>
+              <div class="BookCard" id="completeBook"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="main.js"></script>
+  <footer>
+    <p>
+      Made with &#10084; | <a href="https://www.instagram.com/nafiadnsyh_/">Find Me</a>
+    </p>
+  </footer>
+</body>
+
+</html>
